@@ -70,6 +70,4 @@ See `docs/week2_documentation.md` for full details on the augmentation technique
 - **Scripts**: standalone, documented, individually-tested OpenCV processing functions (`src/`)
 - **Documentation**: challenge research, pipeline architecture, and technique documentation (`docs/`)
 
-## Contributors
 
-See repository contributors.
