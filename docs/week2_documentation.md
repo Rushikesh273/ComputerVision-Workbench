@@ -3,7 +3,7 @@
 This week we built a complete synthetic data generation system for industrial digital weight display images. The goal was to create a large, diverse, and realistic dataset for computer vision tasks.
 
 ## Work Completed This Week
-- Trained an YOLO model using a dataset of 9000+ images with 150 epochs and patience of 30 
+- Trained an YOLO11m model using a dataset of 9000+ images with 150 epochs and patience of 30 
 - Collected and organized base dataset of 150+ clean weight display images.
 - Documented common real-world challenges (reflections, glare, low-contrast digits, motion blur, perspective distortion, lighting variations, etc.).
 - Created `image_processing.py` with reusable OpenCV functions (resize, grayscale, brightness, contrast, blur types, noise types).
