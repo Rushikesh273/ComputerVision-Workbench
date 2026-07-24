@@ -31,16 +31,17 @@ ComputerVision-Workbench/
 
 | Day | Focus |
 |---|---|
-| **Tue** | Computer vision pipeline theory, YOLO, OCR types (Simple/OMR/ICR/IWR), OpenCV, CNNs, repo setup |
-| **Wed** | Python environment setup (venv, dependencies, requirements.txt) |
-| **Thu** | Documented real-world display-reading challenges: reflections, glare, low-contrast digits, motion blur, perspective distortion, display flickering |
-| **Fri** | Pipeline component documentation, high-level architecture diagram, model training research |
+| **Mon** |Research on Computer Vision, YOLO, and OCR types. Created GitHub repository, defined project folder structure (src, docs, data, models, configs, etc.), initialized Git with .gitignore, README.md, and license. |
+| **Tue** | Researched common challenges in industrial display detection (reflections, glare, low-contrast digits, motion blur, perspective distortion, display flickering). Set up Python development environment (virtual environment, installed dependencies, created requirements.txt).|
+| **Wed** | Studied Computer Vision Pipeline & System Architecture. Documented pipeline stages, components, created high-level architecture diagram, data flow diagram, and component responsibility table. |
+| **Thu** | Created detailed documentation files in docs/ folder: cv_pipeline.md, pipeline_components.md, architecture_diagram.png, data_flow_diagram.png, component_responsibilities.md, and assumptions.md.|
+| **Fri** | Researched AI model training process, steps involved in training a model, and related concepts.|
 
 ## Week 2 Summary
 
 | Day | Focus |
 |---|---|
-| **Mon** | Base dataset collection — 150 clean sample images of weight displays, organized dataset folder structure |
+| **Mon** |Documented challenges (reflection, glare, blur, lighting, angles, contrast), and initial YOLO model exploration for carton boxes. |
 | **Tue** | `image_processing.py` — individual OpenCV functions (resize, grayscale, brightness, contrast, blur types, noise types), tested against multiple real sample images |
 | **Wed** | `synthetic_generator.py` — random combined augmentation pipeline, 200 synthetic variations from a single source image |
 | **Thu** | `automation_pipeline.py` — automated the process across an entire folder, with graceful handling of corrupted/invalid files, live progress display, and logging |
@@ -69,6 +70,4 @@ See `docs/week2_documentation.md` for full details on the augmentation technique
 - **Scripts**: standalone, documented, individually-tested OpenCV processing functions (`src/`)
 - **Documentation**: challenge research, pipeline architecture, and technique documentation (`docs/`)
 
-## Contributors
 
-See repository contributors.
