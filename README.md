@@ -6,26 +6,36 @@ This project explores the fundamentals of Computer Vision through practical impl
 
 ## Project Structure
 
-```
+` ` `text
 ComputerVision-Workbench/
 ├── config/                          # project configuration files
 ├── data/
-│   ├── base_dataset/                # curated clean dataset of real display images
-│   ├── input_images/                # source images for synthetic generation
-│   └── synthetic_dataset/           # generated synthetic dataset (images + manifest + logs)
+│   └── base_dataset/                # curated clean dataset of real display images
 ├── docs/                            # research notes and documentation
-│   ├── weight_display_types.md
-│   ├── weight_display_challenges.md
+│   ├── Preprocessing_pipeline_Results.md
+│   ├── Thresholding_Morphology_result.md
+│   ├── architecture_diagram.png
+│   ├── assumptions.md
+│   ├── component_responsibilities.md
 │   ├── cv_pipeline.md
-│   ├── architecture_diagram.drawio / .png
+│   ├── data_flow_diagram.png
+│   ├── perspective_correction_documentation.md
+│   ├── pipeline_components.md
+│   ├── preprocessing_research.md
 │   └── week2_documentation.md
 ├── models/                          # trained model weights (populated in later weeks)
-├── src/
-│   ├── image_processing.py          # core OpenCV image manipulation functions
-│   ├── synthetic_generator.py       # single-image synthetic variation generator
-│   └── automation_pipeline.py       # final automated batch generation + validation pipeline
+├── src/                             # source code
+│   ├── Preprocessing_pipeline.py    
+│   ├── automation_pipeline.py       
+│   ├── image_processing.py          
+│   ├── morphology.py                
+│   ├── perspective_correction.py    
+│   ├── preprocessing_demo.py        
+│   ├── synthetic_generator.py       
+│   └── thresholding.py              
+├── .gitignore
 └── README.md
-```
+` ` `
 
 ## Week 1 Summary
 
