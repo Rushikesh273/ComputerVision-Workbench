@@ -6,8 +6,7 @@ This project explores the fundamentals of Computer Vision through practical impl
 
 ## Project Structure
 
-` ` `text
-ComputerVision-Workbench/
+` ` `text ComputerVision-Workbench/
 ├── config/                          # project configuration files
 ├── data/
 │   └── base_dataset/                # curated clean dataset of real display images
