@@ -15,7 +15,7 @@
 | Trained | 2026-08-12 |
 | Framework | Ultralytics 8.4.118 |
 
-This config and the metrics below are read directly out of the `best.pt` checkpoint's embedded training metadata (`train_args` / `train_metrics` / `train_results`), not retyped by hand.
+This config and the metrics below are read directly out of the `display_detector.pt` checkpoint's embedded training metadata (`train_args` / `train_metrics` / `train_results`), not retyped by hand.
 
 ## 2. Validation performance (best epoch, logged during training)
 
