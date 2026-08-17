@@ -1,0 +1,20 @@
+# Object detection (YOLO-based model training and inference)
+ultralytics
+opencv-python
+numpy
+
+# OCR / text recognition (multiple engines)
+pytesseract
+paddleocr
+paddlepaddle
+easyocr
+mmocr
+openmim
+parseq
+fastocr
+
+# Data processing and analytics
+pandas
+
+# Web dashboard / UI
+streamlit
