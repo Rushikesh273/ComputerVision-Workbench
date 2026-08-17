@@ -63,7 +63,7 @@ No image dropped below the review threshold on its primary detection, which is a
 
 ## 5. Model finalisation
 
-Only one trained candidate exists at this point (`best.pt`, epoch auto-selected by Ultralytics' best-fitness checkpointing during the 80-epoch run — fitness = mAP@50-95 = 0.886). It currently sits alongside `display_detector.py` and `crop_display.py` and is loaded via the local `MODEL_PATH = "best.pt"` setting in `display_detector.py`.
+Only one trained candidate exists at this point (`display_detector.pt`, epoch auto-selected by Ultralytics' best-fitness checkpointing during the 80-epoch run — fitness = mAP@50-95 = 0.886). It currently sits alongside `display_detector.py` and `crop_display.py` and is loaded via the local `MODEL_PATH = "best.pt"` setting in `display_detector.py`.
 
 **Not yet done:** moving it into a dedicated `models/display_detector.pt` path (and updating `MODEL_PATH` in both scripts to point there) is a pending repo-layout cleanup, not something already reflected in the current scripts.
 
