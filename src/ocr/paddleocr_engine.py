@@ -17,28 +17,36 @@ fixed upstream, mkldnn can be re-enabled for a speed boost.
 
 from paddleocr import PaddleOCR
 
-_ocr = None  # lazy-loaded singleton -- loading the model is slow, do it once
-
+_ocr = None
 
 def get_ocr():
     global _ocr
     if _ocr is None:
-        _ocr = PaddleOCR(use_textline_orientation=True, lang="en", enable_mkldnn=False)
+        _ocr = PaddleOCR(
+            lang="en",
+            device="cpu",
+            use_doc_orientation_classify=False,
+            use_doc_unwarping=False,
+            use_textline_orientation=False,
+            enable_mkldnn=False,
+        )
     return _ocr
 
-
 def run_ocr(image_path):
-    """Returns the recognized text as a single string (empty string if none found)."""
     ocr = get_ocr()
-    result = ocr.ocr(image_path)  # PaddleOCR 3.x: no cls= argument anymore
+    try:
+        result = ocr.predict(image_path)   # 3.x preferred
+    except AttributeError:
+        result = ocr.ocr(image_path)       # 2.x fallback
 
     texts = []
-    for res in result:
-        # PaddleOCR 3.x result items are dict-like, with a "rec_texts" key
-        # holding every recognized text string for that image.
-        rec_texts = res.get("rec_texts") if hasattr(res, "get") else getattr(res, "rec_texts", None)
-        if rec_texts:
-            texts.extend(rec_texts)
+    for res in result or []:
+        if res is None:
+            continue
+        if hasattr(res, "rec_texts"):
+            texts.extend(str(t) for t in res.rec_texts if t)
+        elif isinstance(res, dict) and "rec_texts" in res:
+            texts.extend(str(t) for t in res["rec_texts"] if t)
     return " ".join(texts).strip()
 
 
