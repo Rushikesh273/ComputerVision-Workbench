@@ -28,7 +28,7 @@ import cv2
 from ultralytics import YOLO
 
 # ---------------- settings ----------------
-MODEL_PATH = "best.pt"
+MODEL_PATH = "display_detector.pt"
 INPUT_DIR = "input"
 OUTPUT_DIR = "output"
 CONFIDENCE_THRESHOLD = 0.5   # below this, detection is discarded entirely
