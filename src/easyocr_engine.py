@@ -2,8 +2,7 @@
 easyocr_engine.py
 ==================
 EasyOCR wrapper exposing the shared OCR interface used by every engine in
-ocr/: a single run_ocr(image_path) -> str function, so compare_engines.py
-can call all three engines identically.
+ocr/: a single run_ocr(image_path) -> str function
 
 EasyOCR pipeline: CRAFT (detection) -> CRNN (recognition) -> CTC decode.
 """
