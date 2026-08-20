@@ -14,9 +14,13 @@ pip package (pytesseract is just a Python wrapper around it):
 
 import pytesseract
 from PIL import Image
+import shutil
 
-# Set this if tesseract.exe isn't on PATH (common on Windows):
-pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+# Find Tesseract automatically if it is installed and available on PATH.
+tesseract_path = shutil.which("tesseract")
+
+if tesseract_path:
+    pytesseract.pytesseract.tesseract_cmd = tesseract_path
 
 # --psm 7 = treat the image as a single line of text (matches a cropped display).
 # The digit/decimal/minus whitelist steers Tesseract away from misreading
