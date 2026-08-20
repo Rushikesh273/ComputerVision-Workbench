@@ -13,7 +13,7 @@ Usage:
     python display_detector.py
 
 Expects, relative to this script:
-    best.pt        -- the trained model (change MODEL_PATH below if it's elsewhere)
+    display_detector.pt        -- the trained model (change MODEL_PATH below if it's elsewhere)
     input/*.jpg     -- new images to process
 
 Output, for every input/xyz.jpg:
