@@ -1,7 +1,7 @@
 """
 digit_detector.py
 ==================
-Runs the trained digit-detection YOLO model (best.pt) on a cropped display image.
+Runs the trained digit-detection YOLO model (digit_detection.pt) on a cropped display image.
 """
 
 import sys
@@ -10,7 +10,7 @@ from pathlib import Path
 from ultralytics import YOLO
 
 # ---------------- settings ----------------
-MODEL_PATH = "best.pt"
+MODEL_PATH = "digit_detection.pt"
 CONFIDENCE_THRESHOLD = 0.25
 
 _model = None  # Lazy-loaded singleton instance
