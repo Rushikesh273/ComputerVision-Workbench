@@ -1,7 +1,7 @@
 # OCR Engine Benchmark — 7-Segment Display Digits
 
 **Engines tested:** EasyOCR, Tesseract, PaddleOCR
-**Test images:** 10 cropped display photos (`factory_image_001_crop.jpg` – `010_crop.jpg`), output of `display_detector.py` → `crop_display.py`
+**Test images:** 10 cropped display photos 
 **Source data:** `results.csv` (actual engine outputs, not simulated)
 
 ---
