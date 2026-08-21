@@ -74,7 +74,7 @@ def _fix_minus_position(sorted_detections, flags):
     return fixed
 
 
-def _refine_2_vs_5(det, image):
+def _refine(det, image):
     """
     Measures corner segment brightness ratio using Otsu thresholding:
     - Digit '2': Top-Right (B) + Bottom-Left (E) are LIT.
@@ -126,7 +126,7 @@ def _correct_digit_shapes(sorted_detections, image_path, flags):
     for det in sorted_detections:
         current_class = det["class_name"]
         if current_class in ["2", "5"]:
-            corrected = _refine_2_vs_5(det, image)
+            corrected = _refine(det, image)
             if corrected != current_class:
                 flags.append(
                     f"Pixel analysis corrected '{current_class}' -> '{corrected}' "
