@@ -28,7 +28,7 @@ from typing import Optional
 # string-based style used in the Week 7 parser modules.
 # NOTE: "INVALID_READING" is local to this module. The four official
 # system-wide alert states (NORMAL / UNDERWEIGHT / OVERWEIGHT / UNSTABLE)
-# are decided by alert_engine.py (Thursday) according to the rules in
+# are decided by alert_engine.py according to the rules in
 # docs/alert_rules.md sections 4 and 5.
 NORMAL = "NORMAL"
 UNDERWEIGHT = "UNDERWEIGHT"
