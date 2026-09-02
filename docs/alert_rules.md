@@ -130,11 +130,11 @@ All values above are overridable at construction time or via a config file.
 
 | Requirement                                      | Covered by section |
 |--------------------------------------------------|--------------------|
-| Accept validated readings from Week 7            | §1, §5             |
-| Detect under/over weight with configurable limits| §2, §4             |
-| Detect prolonged instability                     | §3, §4             |
-| Clear alert with timestamp, weight, reason       | §6                 |
-| No repeated alerts for continuous events         | §6                 |
-| Correct recovery to NORMAL                       | §6                 |
+| Accept validated readings from Week 7            | 1, 5             |
+| Detect under/over weight with configurable limits| 2, 4             |
+| Detect prolonged instability                     | 3, 4             |
+| Clear alert with timestamp, weight, reason       | 6                 |
+| No repeated alerts for continuous events         | 6                 |
+| Correct recovery to NORMAL                       | 6                 |
 
 ---
