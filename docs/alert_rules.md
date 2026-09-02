@@ -138,5 +138,3 @@ All values above are overridable at construction time or via a config file.
 | Correct recovery to NORMAL                       | §6                 |
 
 ---
-
-**Document status:** Complete – ready for Tuesday implementation (`weight_validator.py`).
