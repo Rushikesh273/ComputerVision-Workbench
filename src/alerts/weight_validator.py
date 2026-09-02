@@ -7,9 +7,9 @@ packing limits, and returns a clear status for every reading.
 
 This module does NOT know about stability or time -- it evaluates exactly
 one reading at a time, with no memory of previous readings. Stability
-(readings over time) is stability_detector.py's job (Wednesday); combining
+(readings over time) is stability_detector.py's job ; combining
 this with stability into the final NORMAL/UNDERWEIGHT/OVERWEIGHT/UNSTABLE
-alert state is alert_engine.py's job (Thursday).
+alert state is alert_engine.py's job .
 
 Input contract: this module expects a plain float (or None), matching what
 you get from Week 7's ParseResult.value when ParseResult.is_valid is True.
